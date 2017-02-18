@@ -18,6 +18,7 @@ class todoController extends Controller
         $todo1->task=$textval->stuff;
         $todo1->save();
         echo "data saved";
+        return back();
     }
 
     public function viewtodo()
@@ -27,6 +28,12 @@ class todoController extends Controller
         return view('todoshow',['asdf'=>$todo3]);
     }
 
+    public function dbdel($idxyz)
+    {
+        $todo4=todotable::find($idxyz);
+        $todo4->delete();
+        return back();
+    }
 
     
 }
