@@ -13,3 +13,5 @@
 
 Route::get('/','todoController@todowelc');
 Route::post('/dbsave','todoController@savetodo');
+
+Route::get('/dbshow','todoController@viewtodo');

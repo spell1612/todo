@@ -17,6 +17,7 @@ class Todomig extends Migration
          Schema::create('todotables', function (Blueprint $table) {
             $table->increments('id');
             $table->string('task');
+            $table->text('description');
             $table->timestamps();
         });
     }
