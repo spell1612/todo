@@ -4,9 +4,10 @@
         To-Do
     </head>
     <body>
-        <form>
-            <input type="text"><br>
-            <input type="submit"><br>
+        <form method=post action='/dbsave'>
+            <input type="text" name='stuff'><br>
+            <input type="submit" value='Button'><br>
+            {{csrf_field()}}
         <form>
     </body>
 </html>

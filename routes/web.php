@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('todoweb');
-});
+Route::get('/','todoController@todowelc');
+Route::post('/dbsave','todoController@savetodo');
