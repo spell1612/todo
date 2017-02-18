@@ -1,6 +1,7 @@
-<html><center>
+<html>
     <head>
         <title>ToDo</title>
+        <center>
          <h2>To-Do Input</h2>
     </head>
     <body>

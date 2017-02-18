@@ -35,6 +35,22 @@ class todoController extends Controller
         return back();
     }
 
+    public function dbed($id)
+    {
+        $todo4=todotable::find($id);
+        return view('editview',['ad'=>$todo4]);
+        
+        
+    }
+
+    public function edit(Request $req)
+    {
+        $todo5=todotable::find($req->hdid);
+        $todo5->description=$req->text1;
+        $todo5->task=$req->evalu;
+        $todo5->save();
+        return view('todoweb');
+    }
     
 }
 

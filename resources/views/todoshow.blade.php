@@ -15,6 +15,7 @@
             <td>{{$a->task}}</td>
             <td>{{$a->description}}</td>
              <td><a href ='/dbdel/{{$a->id}}'><input type=button value=Delete></a></td>
+             <td><a href ='/dbedit/{{$a->id}}'><input type=button value=Edit></a></td>
             </tr>
             
         @endforeach
