@@ -13,6 +13,7 @@ Steps ( For admin privileges, start Powershell in admin mode or if Unix use `$ s
 * After installing requirements, setup laravel's global installer `$ composer global require laravel/insaller`
 * Go to the project folder and grab the project dependancies with `$ composer create-project --prefer-dist laravel/laravel <projectname>`
 * cd into projcet folder with `$ cd <projectname>`
+* Setup your local environment (create a database etc...)
 * Setup the ENVIRONMENT variables in the `.env` file. Create one if it's absent.
 * Use `$ php artisan serve` to host the default Laravel app at localhost:8000
 * use `$ php artisan make:migration <migrationname>` to create migrations which define the schema of the different tables in the database.
@@ -27,6 +28,8 @@ I'll use my project as an example (be sure to setup git and the other requiremen
 * clone from git using `$ git clone https://github.com/spell1612/todo.git <foldername>` (Foldername optional. Defaults to repo name)
 * cd into folder with `$ cd <foldername>` or `$ cd todo` by default
 * create new env file by using `$ cp .env.example .env`
+* Setup your local environment (create a database etc...)
+* Enter your environment details in the .env file
 * grab the dependancies with `$ composer update`
   - dependancies can be defined in the composer.json file
 * migrate the db changes using `$ php artisan migrate`
